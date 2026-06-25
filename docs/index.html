@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Widget Corner LLC — Independent mobile app development</title>
+  <meta name="description" content="Widget Corner LLC is a small independent software studio in Atlanta, Georgia, building cross-platform mobile apps for iOS and Android.">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111418;
+      --muted: #4a5260;
+      --accent: #1f5d8c;
+      --rule: #e5e8ec;
+      --max: 36rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #11161c;
+        --fg: #e8ecf1;
+        --muted: #9aa4b2;
+        --accent: #7fb8e5;
+        --rule: #232a33;
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--fg);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+    }
+    header {
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1.75rem;
+      margin-bottom: 2.25rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.25;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.01em;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin: 0;
+    }
+    main section { margin-bottom: 2.25rem; }
+    h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+      font-weight: 600;
+    }
+    p { margin: 0 0 1rem; }
+    .contact dl { margin: 0; }
+    .contact dt {
+      font-weight: 600;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .contact dt:first-child { margin-top: 0; }
+    .contact dd { margin: 0.15rem 0 0; }
+    footer {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      margin-top: 2.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer p { margin: 0; }
+    @media (max-width: 480px) {
+      .page { padding: 2.5rem 1.25rem 2rem; }
+      h1 { font-size: 1.5rem; }
+      body { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Widget Corner LLC</h1>
+      <p class="tagline">Independent software and mobile app development.</p>
+    </header>
+
+    <main>
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>Widget Corner LLC is a small independent studio building cross-platform mobile apps for iOS and Android. We design and ship focused, well-crafted software for everyday use. The studio is owner-operated and based in Atlanta, Georgia.</p>
+      </section>
+
+      <section class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <dl>
+          <dt>Email</dt>
+          <dd><a href="mailto:support@widgetcorner.com">support@widgetcorner.com</a></dd>
+          <dt>Location</dt>
+          <dd>Atlanta, Georgia</dd>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Widget Corner LLC</p>
+    </footer>
+  </div>
+</body>
+</html>
