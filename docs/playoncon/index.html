@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Play On Con — Schedule and venue map, offline</title>
+  <meta name="description" content="The official companion app for Play On Con. Full four-day schedule, venue map, and reminders — works offline, no account required.">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root {
+      --bg: #f7f7f9;
+      --fg: #111418;
+      --muted: #4a5260;
+      --accent: #5b4fe5;
+      --rule: #e5e8ec;
+      --max: 36rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #11161c;
+        --fg: #e8ecf1;
+        --muted: #9aa4b2;
+        --accent: #9d94ff;
+        --rule: #232a33;
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--fg);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 0 2.5rem;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .brand {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--muted);
+      margin: 0 0 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .brand a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .brand a:hover { color: var(--accent); }
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.1;
+      margin: 0 0 1rem;
+      letter-spacing: -0.025em;
+      font-weight: 800;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin: 0 auto;
+      max-width: 30rem;
+    }
+    main section { margin-bottom: 2.25rem; }
+    h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+      font-weight: 600;
+    }
+    p { margin: 0 0 1rem; }
+    ul.features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul.features li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    ul.features li:last-child { border-bottom: none; }
+    ul.features strong { font-weight: 600; }
+    .privacy-callout {
+      background: color-mix(in srgb, var(--accent) 8%, transparent);
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.25rem;
+      margin: 0 0 1rem;
+      border-radius: 0 4px 4px 0;
+    }
+    .privacy-callout p { margin: 0; }
+    .stores {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+    .stores a {
+      display: inline-block;
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--fg);
+      font-size: 0.95rem;
+    }
+    .stores a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .links a + a { margin-left: 1rem; }
+    footer {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      margin-top: 2.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer p { margin: 0 0 0.5rem; }
+    footer p:last-child { margin: 0; }
+    @media (max-width: 480px) {
+      .page { padding: 2.5rem 1.25rem 2rem; }
+      h1 { font-size: 2rem; }
+      body { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <p class="brand"><a href="https://widgetcorner.com">Widget Corner</a></p>
+      <h1>Play On Con</h1>
+      <p class="tagline">The official companion app for Play On Con — full schedule, venue map, and reminders. Works offline. No account required.</p>
+    </header>
+
+    <main>
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>Play On Con is a four-day tabletop and gaming convention at the Alabama 4-H Center in Columbiana, Alabama, featuring theater, RPGs, board games, video games, parties, and outdoor activities.</p>
+        <p>This app is built offline-first so attendees can navigate sessions and venues even where cell signal is spotty — cabins, the Lodge, or out on the grounds.</p>
+      </section>
+
+      <section aria-labelledby="features-heading">
+        <h2 id="features-heading">Features</h2>
+        <ul class="features">
+          <li><strong>Full four-day schedule.</strong> Every session across every venue. The view auto-opens to the current time slot.</li>
+          <li><strong>My Schedule.</strong> Save sessions you want to attend.</li>
+          <li><strong>Reminders.</strong> Local notifications at start time or a custom number of minutes ahead. No account, no push server.</li>
+          <li><strong>Venue map with “you are here.”</strong> Color-coded pins for Stages, Gaming, Parties, Outdoors, and Stay &amp; Eat. Location use is opt-in.</li>
+          <li><strong>Tap to explore.</strong> See what’s happening at each venue. Jump from any session to its venue pin.</li>
+          <li><strong>Session tags.</strong> Ages 21+, PG-13, Apprentice Track, Auditioned/Casted, Sensory Friendly, Sign-up at Open Gaming.</li>
+          <li><strong>Discord link and sync status.</strong> Quick community access and a clear last-synced indicator.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="privacy-heading">
+        <h2 id="privacy-heading">Privacy</h2>
+        <div class="privacy-callout">
+          <p>No account. No login. No ads. No tracking. <strong>Zero data collected.</strong> Location use is opt-in and stays on your device.</p>
+        </div>
+        <p>Read the full <a href="privacy/">privacy policy</a>.</p>
+      </section>
+
+      <section aria-labelledby="download-heading">
+        <h2 id="download-heading">Download</h2>
+        <div class="stores">
+          <a href="https://apps.apple.com/us/app/play-on-con/id6782482020">App Store (iOS)</a>
+          <!-- TODO: replace # with the Play Store URL once published -->
+          <a href="#">Google Play (Android)</a>
+        </div>
+      </section>
+
+      <section class="links" aria-labelledby="more-heading">
+        <h2 id="more-heading">More</h2>
+        <p>
+          <a href="support/">Support</a>
+          <a href="privacy/">Privacy</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Play On Con is an app by <a href="https://widgetcorner.com">Widget Corner LLC</a>.</p>
+      <p>&copy; 2026 Widget Corner LLC</p>
+    </footer>
+  </div>
+</body>
+</html>
