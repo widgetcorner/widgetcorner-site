@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Of Wand &amp; Flame — A SwiftUI companion for witchcraft practice</title>
+  <meta name="description" content="Of Wand & Flame is a SwiftUI iOS app for witchcraft practitioners — a personal companion for ritual, reflection, and seasonal practice.">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root {
+      --bg: #f7f7f9;
+      --fg: #111418;
+      --muted: #4a5260;
+      --accent: #5b4fe5;
+      --rule: #e5e8ec;
+      --max: 36rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #11161c;
+        --fg: #e8ecf1;
+        --muted: #9aa4b2;
+        --accent: #9d94ff;
+        --rule: #232a33;
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--fg);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 0 2.5rem;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .brand {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--muted);
+      margin: 0 0 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .brand a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .brand a:hover { color: var(--accent); }
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.1;
+      margin: 0 0 1rem;
+      letter-spacing: -0.025em;
+      font-weight: 800;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin: 0 auto;
+      max-width: 30rem;
+    }
+    main section { margin-bottom: 2.25rem; }
+    h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+      font-weight: 600;
+    }
+    p { margin: 0 0 1rem; }
+    ul.features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul.features li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    ul.features li:last-child { border-bottom: none; }
+    ul.features strong { font-weight: 600; }
+    .privacy-callout {
+      background: color-mix(in srgb, var(--accent) 8%, transparent);
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.25rem;
+      margin: 0 0 1rem;
+      border-radius: 0 4px 4px 0;
+    }
+    .privacy-callout p { margin: 0; }
+    .stores {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+    .stores a {
+      display: inline-block;
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--fg);
+      font-size: 0.95rem;
+    }
+    .stores a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .status-pill {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background: color-mix(in srgb, var(--accent) 12%, transparent);
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    .links a + a { margin-left: 1rem; }
+    footer {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      margin-top: 2.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer p { margin: 0 0 0.5rem; }
+    footer p:last-child { margin: 0; }
+    @media (max-width: 480px) {
+      .page { padding: 2.5rem 1.25rem 2rem; }
+      h1 { font-size: 2rem; }
+      body { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <p class="brand"><a href="https://widgetcorner.com">Widget Corner</a></p>
+      <span class="status-pill">In development</span>
+      <h1>Of Wand &amp; Flame</h1>
+      <p class="tagline">A personal companion for ritual, reflection, and seasonal practice — pairing Ursula Seren’s mentorship with everyday tools for spells, the moon, and the Wheel of the Year.</p>
+    </header>
+
+    <main>
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>Of Wand &amp; Flame is a SwiftUI app for witchcraft practitioners — a quiet, on-device companion built around eight sabbat arcs, the moon’s cycle, and your own evolving grimoire. Grounded in Ursula Seren’s voice, it’s meant to sit beside your practice, not get in its way.</p>
+        <p>The app is private by design: there is no remote backend, no analytics, no advertising. Everything you write stays on your device.</p>
+      </section>
+
+      <section aria-labelledby="features-heading">
+        <h2 id="features-heading">Features</h2>
+        <ul class="features">
+          <li><strong>Wheel of the Year hub.</strong> Eight sabbat arcs — history, lore, correspondences, and celebrate prompts to mark each turning of the year.</li>
+          <li><strong>Moon phase tracker.</strong> Current-phase guidance tied to your practice — what each phase invites you to do.</li>
+          <li><strong>Spells library.</strong> Read prebuilt spells, save your favorites, and write your own.</li>
+          <li><strong>Grimoire / Book of Shadows.</strong> A private place for personal spells and notes, kept on your device.</li>
+          <li><strong>Correspondences reference.</strong> Herbs, colors, and intents — a quick lookup for when you’re building a working.</li>
+          <li><strong>About the practitioner.</strong> A section grounding the app in Ursula Seren’s voice and approach.</li>
+          <li><strong>Sign in with Apple.</strong> A single, private credential — no password, no email signup, no third-party login.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="privacy-heading">
+        <h2 id="privacy-heading">Privacy</h2>
+        <div class="privacy-callout">
+          <p>No remote backend. No analytics. No third-party SDKs. Your spells, notes, and preferences live on your device in SwiftData and Keychain — and stay there.</p>
+        </div>
+        <p>Read the full <a href="privacy/">privacy policy</a>.</p>
+      </section>
+
+      <section aria-labelledby="download-heading">
+        <h2 id="download-heading">Download</h2>
+        <p>The app is in development for iPhone and iPad on iOS 26+ and not yet available on the App Store.</p>
+        <div class="stores">
+          <!-- TODO: replace # with the App Store URL when published -->
+          <a href="#">App Store (iOS) — coming soon</a>
+        </div>
+      </section>
+
+      <section class="links" aria-labelledby="more-heading">
+        <h2 id="more-heading">More</h2>
+        <p>
+          <a href="support/">Support</a>
+          <a href="privacy/">Privacy</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Of Wand &amp; Flame is an app by <a href="https://widgetcorner.com">Widget Corner LLC</a>.</p>
+      <p>&copy; 2026 Widget Corner LLC</p>
+    </footer>
+  </div>
+</body>
+</html>

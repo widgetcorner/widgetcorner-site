@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Of Wand &amp; Flame — Support</title>
+  <meta name="description" content="Help and support for the Of Wand & Flame app.">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root {
+      --bg: #f7f7f9;
+      --fg: #111418;
+      --muted: #4a5260;
+      --accent: #5b4fe5;
+      --rule: #e5e8ec;
+      --max: 36rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #11161c;
+        --fg: #e8ecf1;
+        --muted: #9aa4b2;
+        --accent: #9d94ff;
+        --rule: #232a33;
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--fg);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 0 2.5rem;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .brand {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--muted);
+      margin: 0 0 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .brand a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .brand a:hover { color: var(--accent); }
+    h1 {
+      font-size: 2.25rem;
+      line-height: 1.15;
+      margin: 0 0 1rem;
+      letter-spacing: -0.025em;
+      font-weight: 800;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin: 0 auto;
+      max-width: 30rem;
+    }
+    main section { margin-bottom: 2.25rem; }
+    h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+      font-weight: 600;
+    }
+    h3 {
+      font-size: 1.05rem;
+      margin: 0 0 0.4rem;
+      font-weight: 600;
+    }
+    p { margin: 0 0 1rem; }
+    .faq-item {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item p:last-child { margin: 0; }
+    .contact dl { margin: 0; }
+    .contact dt {
+      font-weight: 600;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .contact dt:first-child { margin-top: 0; }
+    .contact dd { margin: 0.15rem 0 0; }
+    footer {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      margin-top: 2.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer p { margin: 0 0 0.5rem; }
+    footer p:last-child { margin: 0; }
+    @media (max-width: 480px) {
+      .page { padding: 2.5rem 1.25rem 2rem; }
+      h1 { font-size: 1.85rem; }
+      body { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <p class="brand"><a href="../">Of Wand &amp; Flame</a></p>
+      <h1>Support</h1>
+      <p class="tagline">Help with the Of Wand &amp; Flame app — common questions and how to get in touch.</p>
+    </header>
+
+    <main>
+      <section aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Frequently asked</h2>
+
+        <div class="faq-item">
+          <h3>What does the app do?</h3>
+          <p>It’s a personal companion for witchcraft practice: a Wheel of the Year hub, a moon phase tracker, a spells library, your own grimoire, and a correspondences reference. It’s designed to sit quietly beside your practice.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why do I need to sign in with Apple?</h3>
+          <p>Sign in with Apple is the only way to keep your grimoire tied to you across reinstalls without setting up a username and password. Apple gives the app a stable, private user ID. The app never sees your Apple ID password and never shares your information with anyone.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Will my spells and notes sync between my iPhone and iPad?</h3>
+          <p>Right now everything is stored locally on the device where you wrote it. Cross-device sync isn’t available yet.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What’s the first-run disclaimer?</h3>
+          <p>A short acknowledgement that the app is a personal practice companion — not medical, legal, financial, or psychological advice. We record that you acknowledged it (which version and when) so you don’t have to see it every launch.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do I save a spell to my favorites?</h3>
+          <p>Open a spell from the library and tap the favorite icon. Favorites appear at the top of the library for quick access.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do I write my own spell?</h3>
+          <p>Go to your grimoire and tap the add button. Give the spell a title, intent, and any notes or correspondences you want to record. It’s saved on your device immediately.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I export my grimoire?</h3>
+          <p>Export isn’t available in the current phase. Since your notes live in SwiftData on your device, the safest backup today is an encrypted iCloud or iTunes/Finder device backup.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What iOS version do I need?</h3>
+          <p>iOS 26 or later, on iPhone or iPad.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do I report a bug or request a feature?</h3>
+          <p>Email <a href="mailto:support@widgetcorner.com">support@widgetcorner.com</a>. Include your device model and iOS version if possible.</p>
+        </div>
+      </section>
+
+      <section class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <dl>
+          <dt>Email</dt>
+          <dd><a href="mailto:support@widgetcorner.com">support@widgetcorner.com</a></dd>
+          <dt>Response time</dt>
+          <dd>Usually within a few business days.</dd>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="../">Back to Of Wand &amp; Flame</a> &middot; <a href="../privacy/">Privacy</a></p>
+      <p>&copy; 2026 Widget Corner LLC</p>
+    </footer>
+  </div>
+</body>
+</html>
