@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BurlyCon — Support</title>
-  <meta name="description" content="Help and support for the BurlyCon app. Common questions and how to get in touch.">
+  <meta name="description" content="Help with BurlyCon accessibility, larger text, reduced motion, the room guide, map controls, schedule updates, and reminders.">
   <meta name="color-scheme" content="light dark">
   <style>
     :root {
@@ -36,6 +36,7 @@
       -webkit-font-smoothing: antialiased;
     }
     a {
+      overflow-wrap: anywhere;
       color: var(--accent);
       text-decoration: underline;
       text-underline-offset: 2px;
@@ -136,7 +137,7 @@
     <header>
       <p class="brand"><a href="../">BurlyCon</a></p>
       <h1>Support</h1>
-      <p class="tagline">Help with the BurlyCon app — common questions and how to get in touch.</p>
+      <p class="tagline">Help with the BurlyCon app — accessibility, common questions, and how to get in touch.</p>
     </header>
 
     <main>
@@ -160,12 +161,50 @@
 
         <div class="faq-item">
           <h3>Does the app work offline?</h3>
-          <p>Yes. The bundled schedule, saved sessions, and venue floor plan work without a network connection, including on first use. An internet connection is needed to download schedule updates or open external links such as registration and hotel websites.</p>
+          <p>Yes. The bundled schedule, saved sessions, venue map, and text room guide work without a network connection, including on first use. An internet connection is needed to download schedule updates or open external links such as registration and hotel websites.</p>
         </div>
 
         <div class="faq-item">
           <h3>How do I report a bug or request a feature?</h3>
           <p>Email <a href="mailto:support@widgetcorner.com">support@widgetcorner.com</a>. Include a description of what happened, your device model, OS version, and app version if possible.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="accessibility-heading">
+        <h2 id="accessibility-heading">Accessibility help</h2>
+        <p>These instructions describe version 2026.9.15 (build 10). Older builds may look different. Find your installed version near the bottom of Home.</p>
+
+        <div class="faq-item">
+          <h3>How do I make text larger?</h3>
+          <p>The app follows your device’s text-size setting. On iPhone and iPad, open Settings → Accessibility → Display &amp; Text Size → Larger Text. On Android, search Settings for “Font size” or “Display size.” See <a href="https://support.apple.com/guide/iphone/make-text-easier-to-read-iph3c076905a/ios">Apple’s text-size guide</a> or <a href="https://support.google.com/accessibility/answer/11183305?hl=en">Google’s text and display guide</a>.</p>
+          <p>At larger sizes, headings wrap and dialogs scroll. If the bottom navigation changes to one button showing the current page, open it to choose Home, Schedule, or Key. My Con is inside Schedule.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do I use Dark Mode or reduce animation?</h3>
+          <p>BurlyCon follows your device’s light or dark appearance. For reduced motion on iPhone and iPad, use Settings → Accessibility → Motion → Reduce Motion. On Android, search Settings for “Remove animations.” Navigation, dialogs, and refresh indicators adapt to that preference; you can still scroll normally. See <a href="https://support.apple.com/guide/iphone/customize-onscreen-motion-iph0b691d3ed/ios">Apple’s motion settings</a> or <a href="https://support.google.com/accessibility/answer/11183305?hl=en">Google’s display settings</a>.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I find rooms without reading the map image?</h3>
+          <p>Open Venue map from Home, then choose Room guide for text descriptions of room locations. The guide follows your text size and appearance settings and opens by default in Dark Mode or when screen-reader navigation is active. Both the guide and map work offline.</p>
+          <p>The descriptions explain positions on the portrait map. For step-free routes, accommodations, or current room assignments, contact BurlyCon organizers or the hotel front desk. The map image retains its light background in Dark Mode.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I use the map without pinching or dragging?</h3>
+          <p>Yes. Select Map, then open Map controls in the top bar. Use Zoom in, Zoom out, Reset zoom, or the four Pan buttons. The controls dialog scrolls when space is limited or text is enlarged.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I set a custom reminder with buttons?</h3>
+          <p>When saving a session, choose Custom… and enter 1–120 in the Minutes field, or use Decrease minutes and Increase minutes. Choose Set reminder to confirm. The dialog scrolls to keep its controls reachable with larger text and the keyboard open.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is the status of screen-reader and voice-control support?</h3>
+          <p>The app includes labeled controls, headings, saved and selected states, and a text room guide. Selected TalkBack navigation and room-guide checks have been completed on an Android phone emulator. Full TalkBack task coverage and hands-on VoiceOver, Voice Control, and Voice Access testing are still pending. We have not verified every task with these tools on physical devices.</p>
+          <p>If you encounter a barrier, email <a href="mailto:support@widgetcorner.com">support@widgetcorner.com</a> with the screen or task, what happened, your device and app versions, and any accessibility tool or setting relevant to the issue.</p>
         </div>
       </section>
 
@@ -175,7 +214,7 @@
           <dt>App support</dt>
           <dd><a href="mailto:support@widgetcorner.com">support@widgetcorner.com</a></dd>
           <dt>Convention questions</dt>
-          <dd><a href="mailto:media@burlycon.org">media@burlycon.org</a> — registration, classes, and event information.</dd>
+          <dd><a href="mailto:media@burlycon.org">media@burlycon.org</a> — registration, classes, venue accessibility, and event information.</dd>
           <dt>Response time</dt>
           <dd>Usually within a few business days.</dd>
         </dl>

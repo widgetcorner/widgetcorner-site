@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BurlyCon — Schedule and venue guide, offline</title>
-  <meta name="description" content="The companion app for BurlyCon. Full schedule, venue floor plan, and reminders — works offline, no account required.">
+  <meta name="description" content="The companion app for BurlyCon. Offline schedule, room guide, venue map, and reminders, with larger text, dark mode, and reduced motion.">
   <meta name="color-scheme" content="light dark">
   <style>
     :root {
@@ -36,6 +36,7 @@
       -webkit-font-smoothing: antialiased;
     }
     a {
+      overflow-wrap: anywhere;
       color: var(--accent);
       text-decoration: underline;
       text-underline-offset: 2px;
@@ -134,14 +135,14 @@
     <header>
       <p class="brand"><a href="https://widgetcorner.com">Widget Corner</a></p>
       <h1>BurlyCon</h1>
-      <p class="tagline">The companion app for BurlyCon — full schedule, venue floor plan, and reminders. Works offline. No account required.</p>
+      <p class="tagline">The companion app for BurlyCon — schedule, room guide, venue map, and reminders. Works offline. No account required.</p>
     </header>
 
     <main>
       <section aria-labelledby="about-heading">
         <h2 id="about-heading">About</h2>
         <p><a href="https://burlycon.org/convention/">BurlyCon</a> is an annual burlesque arts education convention, held November 5–8, 2026 at the Hilton Seattle Airport &amp; Conference Center in Seattle, Washington.</p>
-        <p>The companion app for iOS and Android includes a bundled schedule and venue floor plan, so you can browse classes and find rooms even without a connection. Connect to refresh the schedule with the latest updates.</p>
+        <p>The companion app for iPhone, iPad, and Android includes a bundled schedule, venue map, and text room guide, so you can browse classes and look up room locations even without a connection. Connect to refresh the schedule with the latest updates.</p>
       </section>
 
       <section aria-labelledby="features-heading">
@@ -151,9 +152,21 @@
           <li><strong>Day chips and search.</strong> Jump between Thursday–Sunday and search by title, presenter, or room.</li>
           <li><strong>My Con.</strong> Save the sessions you want to attend, grouped by day.</li>
           <li><strong>Reminders.</strong> Choose a local notification for a session’s start time or up to two hours ahead. Notification permission is required; delivery timing depends on your device.</li>
-          <li><strong>Venue floor plan.</strong> Zoom in on the venue map to find the room named in your session details. The floor plan is included for offline use.</li>
+          <li><strong>Venue map and room guide.</strong> Read room descriptions or explore the Cascade Building map with zoom, pan, and reset buttons. Both views are included for offline use.</li>
           <li><strong>Info and links.</strong> Presenter biographies, registration links, hotel details, and accessibility information in one place. External websites require a connection.</li>
         </ul>
+      </section>
+
+      <section aria-labelledby="accessibility-heading">
+        <h2 id="accessibility-heading">Accessibility</h2>
+        <p>Version 2026.9.15 (build 10) adds accessibility improvements across phones and tablets. Features depend on the app version installed on your device.</p>
+        <ul class="features">
+          <li><strong>Larger text.</strong> The app follows your device’s text-size setting, with wrapping titles, scrollable dialogs, and navigation that adapts to the available space.</li>
+          <li><strong>Light and dark appearance.</strong> The app follows your device’s theme, with updated text and control contrast. The room guide follows Dark Mode; the map image keeps its light background.</li>
+          <li><strong>Reduced motion.</strong> Navigation, dialogs, and refresh indicators respond to your device’s reduced-motion setting.</li>
+          <li><strong>Clearer controls.</strong> Descriptive headings and button labels help assistive technology identify content and actions. Selected filters and saved sessions use text or symbols as well as color.</li>
+        </ul>
+        <p>See <a href="support/#accessibility-heading">accessibility help</a> for settings, map instructions, and the current status of screen-reader and voice-control testing.</p>
       </section>
 
       <section aria-labelledby="privacy-heading">
