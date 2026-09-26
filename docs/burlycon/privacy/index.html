@@ -127,12 +127,12 @@
     <header>
       <p class="brand"><a href="../">BurlyCon</a></p>
       <h1>Privacy Policy</h1>
-      <p class="effective">Effective: September 15, 2026</p>
+      <p class="effective">Effective: September 26, 2026</p>
     </header>
 
     <main>
       <div class="summary">
-        <p><strong>Summary:</strong> The BurlyCon app has no accounts, analytics, advertising, or tracking. Your saved sessions and reminder settings are stored locally and are not sent to BurlyCon or Widget Corner. Content downloads, device backups, external links, and information you choose to send by email are described below.</p>
+        <p><strong>Summary:</strong> The BurlyCon app has no accounts, analytics, advertising, or tracking. Your saved sessions and reminder settings are stored locally and are not sent to BurlyCon or Widget Corner. To deliver organizer announcement alerts, the app registers with Google’s Firebase Cloud Messaging, which assigns it an app-specific identifier that is not linked to you. Content downloads, alerts, device backups, external links, and information you choose to send by email are described below.</p>
       </div>
 
       <section>
@@ -142,7 +142,7 @@
 
       <section>
         <h2>Information we collect</h2>
-        <p>The app does not ask you to create an account or provide your name, email address, or other contact details to use it. It does not send us your saved sessions, reminder choices, or app usage. We do not include analytics, advertising, or third-party crash-reporting services in the app.</p>
+        <p>The app does not ask you to create an account or provide your name, email address, or other contact details to use it. It does not send us your saved sessions, reminder choices, or app usage. We do not include analytics, advertising, or third-party crash-reporting services in the app. The one outside service the app registers with is Firebase Cloud Messaging, which delivers announcement alerts, as described under Notifications.</p>
       </section>
 
       <section>
@@ -153,21 +153,23 @@
 
       <section>
         <h2>Content downloads</h2>
-        <p>The app includes bundled convention content and downloads updates to the schedule and presenter biographies from online sources, including Google-hosted spreadsheets. These requests do not include your saved sessions or reminder settings. As with any internet connection, content providers receive technical information such as your IP address and the content requested. Google describes its handling and retention of this information in its <a href="https://policies.google.com/privacy">Privacy Policy</a>. These downloads do not sign you in to a Google account or send your in-app search terms.</p>
+        <p>The app includes bundled convention content and downloads updates to the schedule, presenter biographies, and organizer announcements from online sources, including Google-hosted spreadsheets. These requests do not include your saved sessions or reminder settings. As with any internet connection, content providers receive technical information such as your IP address and the content requested. Google describes its handling and retention of this information in its <a href="https://policies.google.com/privacy">Privacy Policy</a>. These downloads do not sign you in to a Google account or send your in-app search terms.</p>
       </section>
 
       <section>
         <h2>Notifications</h2>
-        <p>Reminders are delivered as local notifications, scheduled and fired by your device. No push notification server is involved, and we do not know which reminders you have set. You choose whether to allow notifications and can change that permission in your device settings. Session titles and locations may appear in notifications, including on the lock screen, according to those settings.</p>
+        <p><strong>Session reminders</strong> are local notifications, scheduled and fired by your device. No server is involved, and we do not know which reminders you have set.</p>
+        <p><strong>Announcement alerts</strong> are sent by BurlyCon organizers to everyone with the app, for time-sensitive convention news such as a room change. To receive them, the app registers with Firebase Cloud Messaging, a Google service. Firebase assigns the app an installation identifier and a delivery token and adds it to BurlyCon’s announcement list. These identify the app installation, not you: they are not linked to your name, email address, saved sessions, or reminder settings, and we do not use them to track you. The app does not send them to BurlyCon or Widget Corner, and alerts go to everyone on the list rather than to individual devices. On iPhone and iPad, Apple’s push notification service carries alerts to your device. As with any internet connection, Google and Apple receive technical information such as your IP address. Google describes its handling of Firebase data in its <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>, and Apple in its <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>.</p>
+        <p>You choose whether to allow notifications and can change that permission in your device settings. On Android, announcement alerts and session reminders are separate notification categories that you can turn off independently. Session titles, locations, and announcement text may appear in notifications, including on the lock screen, according to those settings.</p>
       </section>
 
       <section>
         <h2>Data stored on your device</h2>
         <p>The app stores the following locally:</p>
         <ul class="data-list">
-          <li>Downloaded schedule and presenter information, alongside the bundled venue map and text room guide.</li>
+          <li>Downloaded schedule, presenter information, and announcements, alongside the bundled venue map and text room guide.</li>
           <li>Your saved sessions.</li>
-          <li>Your reminder settings and app preferences.</li>
+          <li>Your reminder settings and app preferences, including which announcements you have seen and your answer to the announcement-alerts prompt.</li>
           <li>Session information and saved-session status used by home-screen widgets and, on iOS, system search and Siri shortcuts.</li>
         </ul>
         <p>The app does not provide a Widget Corner account or cloud-sync service for this data. Your operating system may include app data in device backups or transfers, depending on your settings. Deleting the app does not delete existing device backups. Use your device’s app-storage and backup settings to manage stored copies.</p>
@@ -175,7 +177,7 @@
 
       <section>
         <h2>Analytics, advertising, and tracking</h2>
-        <p>The app does not include analytics SDKs, advertising SDKs, third-party crash reporters, or tracking tools. Device and app-store diagnostic services, if enabled by you, are governed by the platform provider’s settings and policies. System search and Siri features are also subject to your device settings and Apple’s privacy practices.</p>
+        <p>The app does not include analytics SDKs, advertising SDKs, third-party crash reporters, or tracking tools. Firebase Cloud Messaging is used only to deliver announcement alerts; Google Analytics for Firebase is not included. Device and app-store diagnostic services, if enabled by you, are governed by the platform provider’s settings and policies. System search and Siri features are also subject to your device settings and Apple’s privacy practices.</p>
       </section>
 
       <section>
@@ -190,7 +192,7 @@
 
       <section>
         <h2>Retention and your choices</h2>
-        <p>Saved sessions and preferences remain on your device until you remove them or delete the app’s data. Removing a session from My Con also cancels its pending reminder. Downloaded content is replaced when a newer version is successfully downloaded. You can manage notifications, widgets, system search, and device backups in your device settings. Offloading the app may preserve its data, and deleting the app does not remove existing backups.</p>
+        <p>Saved sessions and preferences remain on your device until you remove them or delete the app’s data. Removing a session from My Con also cancels its pending reminder. Downloaded content is replaced when a newer version is successfully downloaded. To stop announcement alerts, turn off BurlyCon notifications in your device settings; deleting the app stops alerts to that installation. Firebase keeps the app’s installation identifier until we ask Google to delete it, and then removes it within 180 days. You can manage notifications, widgets, system search, and device backups in your device settings. Offloading the app may preserve its data, and deleting the app does not remove existing backups.</p>
         <p>We retain support correspondence for as long as reasonably needed to respond, troubleshoot, maintain necessary support records, and meet legal obligations. To request access to, correction of, or deletion of information you sent to app support, email <a href="mailto:support@widgetcorner.com">support@widgetcorner.com</a>. We will review your request and explain any information we must retain. Because we do not hold your saved schedule or reminder settings, we cannot retrieve or erase those device-stored records remotely.</p>
       </section>
 
