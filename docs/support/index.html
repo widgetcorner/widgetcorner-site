@@ -6,154 +6,31 @@
   <title>Widget Corner — Support</title>
   <meta name="description" content="Support for apps by Widget Corner LLC. Contact information, response times, and per-app help links.">
   <meta name="color-scheme" content="light dark">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' ry='22' fill='%235b4fe5'/%3E%3Cpath d='M30 28 h28 l12 12 v32 a4 4 0 0 1 -4 4 h-36 a4 4 0 0 1 -4 -4 v-40 a4 4 0 0 1 4 -4 z' fill='%23ffffff'/%3E%3Cpath d='M58 28 v8 a4 4 0 0 0 4 4 h8 z' fill='%23d6d6dc'/%3E%3C/svg%3E">
-  <style>
-    :root {
-      --bg: #f7f7f9;
-      --fg: #111418;
-      --muted: #4a5260;
-      --accent: #5b4fe5;
-      --rule: #e5e8ec;
-      --max: 36rem;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #11161c;
-        --fg: #e8ecf1;
-        --muted: #9aa4b2;
-        --accent: #9d94ff;
-        --rule: #232a33;
-      }
-    }
-    *, *::before, *::after { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 17px;
-      line-height: 1.6;
-      color: var(--fg);
-      background: var(--bg);
-      -webkit-font-smoothing: antialiased;
-    }
-    a {
-      overflow-wrap: anywhere;
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-    a:hover { text-decoration-thickness: 2px; }
-    a:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 2px;
-      border-radius: 2px;
-    }
-    .page {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 4rem 1.5rem 3rem;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 0 2.5rem;
-      margin-bottom: 2.5rem;
-      border-bottom: 1px solid var(--rule);
-    }
-    .brand {
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--muted);
-      margin: 0 0 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-    .brand a {
-      color: inherit;
-      text-decoration: none;
-    }
-    .brand a:hover { color: var(--accent); }
-    h1 {
-      font-size: 2.25rem;
-      line-height: 1.15;
-      margin: 0 0 1rem;
-      letter-spacing: -0.025em;
-      font-weight: 800;
-    }
-    .tagline {
-      color: var(--muted);
-      font-size: 1.05rem;
-      margin: 0 auto;
-      max-width: 30rem;
-    }
-    main section { margin-bottom: 2.25rem; }
-    h2 {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted);
-      margin: 0 0 0.75rem;
-      font-weight: 600;
-    }
-    h3 {
-      font-size: 1.05rem;
-      margin: 0 0 0.4rem;
-      font-weight: 600;
-    }
-    p { margin: 0 0 1rem; }
-    .apps {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .apps li {
-      padding: 1rem 0;
-      border-bottom: 1px solid var(--rule);
-    }
-    .apps li:last-child { border-bottom: none; }
-    .apps h3 a {
-      color: var(--fg);
-      text-decoration: none;
-    }
-    .apps h3 a:hover { color: var(--accent); }
-    .apps p { margin: 0 0 0.4rem; color: var(--muted); font-size: 0.95rem; }
-    .apps .app-links { font-size: 0.9rem; }
-    .apps .app-links a + a { margin-left: 1rem; }
-    .contact dl { margin: 0; }
-    .contact dt {
-      font-weight: 600;
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-top: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-    .contact dt:first-child { margin-top: 0; }
-    .contact dd { margin: 0.15rem 0 0; }
-    footer {
-      border-top: 1px solid var(--rule);
-      padding-top: 1.5rem;
-      margin-top: 2.5rem;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-    footer p { margin: 0 0 0.5rem; }
-    footer p:last-child { margin: 0; }
-    @media (max-width: 480px) {
-      .page { padding: 2.5rem 1.25rem 2rem; }
-      h1 { font-size: 1.85rem; }
-      body { font-size: 16px; }
-    }
-  </style>
+  <link rel="icon" type="image/svg+xml" href="../assets/widget-mark.svg">
+  <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body>
+<body class="document-page support-index">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand-link" href="../">
+        <img class="brand-mark" src="../assets/widget-mark.svg" width="32" height="32" alt="">
+        <span>Widget Corner</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../#apps">Apps</a>
+        <a href="../support/" aria-current="page">Support</a>
+      </nav>
+    </div>
+  </header>
   <div class="page">
-    <header>
-      <p class="brand"><a href="../">Widget Corner</a></p>
+    <header class="document-header">
+      <p class="breadcrumb"><a href="../">Widget Corner</a><span aria-hidden="true"> / </span><span>Support</span></p>
       <h1>Support</h1>
       <p class="tagline">Help with apps by Widget Corner LLC. Contact us by email or find per-app help below.</p>
     </header>
 
-    <main>
+    <main id="main">
       <section class="contact" aria-labelledby="contact-heading">
         <h2 id="contact-heading">Contact</h2>
         <dl>
@@ -206,7 +83,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="document-footer">
       <p><a href="../">Back to Widget Corner</a></p>
       <p>&copy; 2026 Widget Corner LLC</p>
     </footer>

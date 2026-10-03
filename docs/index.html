@@ -3,216 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Widget Corner LLC — Independent mobile app development</title>
-  <meta name="description" content="Widget Corner LLC is a small independent software studio in Atlanta, Georgia, building cross-platform mobile apps for iOS and Android.">
+  <title>Widget Corner — Small apps. Made for real life.</title>
+  <meta name="description" content="Independent apps for game nights, convention weekends, and everyday life. Meet Play On Con, BurlyCon, and Lock It Up, made with care in Atlanta.">
   <meta name="color-scheme" content="light dark">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' ry='22' fill='%235b4fe5'/%3E%3Cpath d='M30 28 h28 l12 12 v32 a4 4 0 0 1 -4 4 h-36 a4 4 0 0 1 -4 -4 v-40 a4 4 0 0 1 4 -4 z' fill='%23ffffff'/%3E%3Cpath d='M58 28 v8 a4 4 0 0 0 4 4 h8 z' fill='%23d6d6dc'/%3E%3C/svg%3E">
-  <style>
-    :root {
-      --bg: #f7f7f9;
-      --fg: #111418;
-      --muted: #4a5260;
-      --accent: #5b4fe5;
-      --rule: #e5e8ec;
-      --max: 36rem;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #11161c;
-        --fg: #e8ecf1;
-        --muted: #9aa4b2;
-        --accent: #9d94ff;
-        --rule: #232a33;
-      }
-    }
-    *, *::before, *::after { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 17px;
-      line-height: 1.6;
-      color: var(--fg);
-      background: var(--bg);
-      -webkit-font-smoothing: antialiased;
-    }
-    a {
-      overflow-wrap: anywhere;
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-    a:hover { text-decoration-thickness: 2px; }
-    a:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 2px;
-      border-radius: 2px;
-    }
-    .page {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 4rem 1.5rem 3rem;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 0 2.5rem;
-      margin-bottom: 2.5rem;
-      border-bottom: 1px solid var(--rule);
-    }
-    .logo {
-      width: 72px;
-      height: 72px;
-      margin: 0 auto 1.5rem;
-      display: block;
-    }
-    .brand {
-      font-size: 1rem;
-      font-weight: 500;
-      color: var(--fg);
-      margin: 0 0 1rem;
-      letter-spacing: -0.005em;
-    }
-    h1 {
-      font-size: 2.5rem;
-      line-height: 1.1;
-      margin: 0 0 1rem;
-      letter-spacing: -0.025em;
-      font-weight: 800;
-    }
-    .tagline {
-      color: var(--muted);
-      font-size: 1.05rem;
-      margin: 0 auto;
-      max-width: 30rem;
-    }
-    main section { margin-bottom: 2.25rem; }
-    h2 {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted);
-      margin: 0 0 0.75rem;
-      font-weight: 600;
-    }
-    p { margin: 0 0 1rem; }
-    .apps {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .apps li {
-      padding: 1rem 0;
-      border-bottom: 1px solid var(--rule);
-    }
-    .apps li:last-child { border-bottom: none; }
-    .apps h3 {
-      font-size: 1.1rem;
-      margin: 0 0 0.25rem;
-      font-weight: 600;
-    }
-    .apps h3 a {
-      color: var(--fg);
-      text-decoration: none;
-    }
-    .apps h3 a:hover { color: var(--accent); }
-    .apps p { margin: 0 0 0.4rem; color: var(--muted); font-size: 0.95rem; }
-    .apps .app-links { font-size: 0.9rem; }
-    .apps .app-links a + a { margin-left: 1rem; }
-    .contact dl { margin: 0; }
-    .contact dt {
-      font-weight: 600;
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-top: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-    .contact dt:first-child { margin-top: 0; }
-    .contact dd { margin: 0.15rem 0 0; }
-    footer {
-      border-top: 1px solid var(--rule);
-      padding-top: 1.5rem;
-      margin-top: 2.5rem;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-    footer p { margin: 0; }
-    @media (max-width: 480px) {
-      .page { padding: 2.5rem 1.25rem 2rem; }
-      h1 { font-size: 2rem; }
-      .logo { width: 60px; height: 60px; }
-      body { font-size: 16px; }
-    }
-  </style>
+  <meta name="theme-color" content="#f8f7f2">
+  <link rel="icon" type="image/svg+xml" href="assets/widget-mark.svg">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
-  <div class="page">
-    <header>
-      <svg class="logo" viewBox="0 0 100 100" role="img" aria-label="Widget Corner logo" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100" height="100" rx="22" ry="22" fill="#5b4fe5"/>
-        <path d="M30 28 h28 l12 12 v32 a4 4 0 0 1 -4 4 h-36 a4 4 0 0 1 -4 -4 v-40 a4 4 0 0 1 4 -4 z" fill="#ffffff"/>
-        <path d="M58 28 v8 a4 4 0 0 0 4 4 h8 z" fill="#d6d6dc"/>
-      </svg>
-      <p class="brand">Widget Corner</p>
-      <h1>Small apps, made with care.</h1>
-      <p class="tagline">An independent studio building simple, well-crafted mobile apps for iOS and Android.</p>
-    </header>
-
-    <main>
-      <section aria-labelledby="about-heading">
-        <h2 id="about-heading">About</h2>
-        <p>Widget Corner LLC is a small independent studio building cross-platform mobile apps for iOS and Android. We design and ship focused, well-crafted software for everyday use. The studio is owner-operated and based in Atlanta, Georgia.</p>
-      </section>
-
-      <section aria-labelledby="apps-heading">
-        <h2 id="apps-heading">Apps</h2>
-        <ul class="apps">
-          <li>
-            <h3><a href="playoncon/">Play On Con</a></h3>
-            <p>The official companion app for Play On Con — full schedule, venue map, and reminders. Works offline. No account required.</p>
-            <p class="app-links">
-              <a href="playoncon/">Overview</a>
-              <a href="playoncon/support/">Support</a>
-              <a href="playoncon/privacy/">Privacy</a>
-            </p>
-          </li>
-          <li>
-            <h3><a href="burlycon/">BurlyCon</a></h3>
-            <p>The companion app for BurlyCon — schedule, saved sessions, reminders, and an offline venue map and room guide. Adapts to larger text, dark mode, and reduced motion. No account required.</p>
-            <p class="app-links">
-              <a href="burlycon/">Overview</a>
-              <a href="burlycon/support/">Support</a>
-              <a href="burlycon/privacy/">Privacy</a>
-            </p>
-          </li>
-          <li>
-            <h3><a href="lockitup/">Lock It Up</a></h3>
-            <p>A local-first Spades scorekeeper for four players — custom house rules, round scoring, history, and same-platform stats sync. Free, with no ads.</p>
-            <p class="app-links">
-              <a href="lockitup/">Overview</a>
-              <a href="lockitup/support/">Support</a>
-              <a href="lockitup/privacy/">Privacy</a>
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact</h2>
-        <dl>
-          <dt>Support</dt>
-          <dd><a href="support/">widgetcorner.com/support</a></dd>
-          <dt>Email</dt>
-          <dd><a href="mailto:support@widgetcorner.com">support@widgetcorner.com</a></dd>
-          <dt>Location</dt>
-          <dd>Atlanta, Georgia</dd>
-        </dl>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2026 Widget Corner LLC</p>
-    </footer>
-  </div>
+<body class="home-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand-link" href="./" aria-label="Widget Corner home"><img class="brand-mark" src="assets/widget-mark.svg" alt="" width="36" height="36">Widget Corner<span class="brand-period">.</span></a>
+      <nav class="site-nav" aria-label="Primary"><a href="#apps">Our apps</a><a href="#about">The studio</a><a href="support/">Support <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="shell home-hero" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> A small, independent software studio</p>
+        <h1 id="hero-heading">Small apps.<br>Made for<br><span>real life.</span></h1>
+        <p class="hero-description">For the game nights, the convention weekends, and the little things in between.</p>
+        <div class="hero-actions"><a class="button" href="#apps">Meet the apps <span aria-hidden="true">↘</span></a><span class="platform-note">Made for iOS &amp; Android</span></div>
+      </div>
+      <div class="studio-art" aria-hidden="true">
+        <svg class="art-grid" viewBox="0 0 480 480" fill="none"><path d="M80 0V480M160 0V480M240 0V480M320 0V480M400 0V480M0 80H480M0 160H480M0 240H480M0 320H480M0 400H480" stroke="currentColor"/><path d="M35 38H49M42 31V45M431 442H445M438 435V449" stroke="currentColor" stroke-width="2"/></svg>
+        <div class="floating-app floating-playoncon"><img src="assets/playoncon-icon.png" alt="" width="176" height="176"></div>
+        <div class="floating-app floating-burlycon"><img src="assets/burlycon-icon.png" alt="" width="140" height="140"></div>
+        <div class="floating-app floating-lockitup"><img src="assets/lockitup-icon.png" alt="" width="178" height="178"></div>
+        <span class="art-spark spark-one">✳</span><span class="art-spark spark-two">✦</span>
+        <span class="art-note">A little corner of your everyday.</span>
+      </div>
+    </section>
+    <section class="shell apps-section" id="apps" aria-labelledby="apps-heading">
+      <div class="section-heading"><div><p class="eyebrow">Meet your next little favorite</p><h2 id="apps-heading">Good things come<br>in small apps.</h2></div><p>A few things we’ve made.<br>A little something for you.</p></div>
+      <div class="app-grid">
+        <article class="app-card card-playoncon">
+          <a class="app-art art-playoncon" href="playoncon/" tabindex="-1" aria-hidden="true"><span class="art-label">YOUR WEEKEND. ALL HERE.</span><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><img class="card-logo" src="assets/playoncon-icon.png" alt="" width="240" height="240" loading="lazy"><span class="card-spark">✦</span></a>
+          <div class="app-card-copy"><p class="app-category">The convention companion</p><h3><a href="playoncon/">Play On Con <span aria-hidden="true">↗</span></a></h3><p>Find your next game, save your must-do sessions, and make the most of the weekend.</p><div class="app-meta"><span>iOS &amp; Android</span><a href="playoncon/">Explore the app <span aria-hidden="true">→</span></a></div></div>
+        </article>
+        <article class="app-card card-burlycon">
+          <a class="app-art art-burlycon" href="burlycon/" tabindex="-1" aria-hidden="true"><span class="art-label">MAKE IT YOUR CON.</span><img class="card-screen" src="assets/burlycon-screen.png" alt="" width="644" height="1400" loading="lazy"><img class="card-mini-icon" src="assets/burlycon-icon.png" alt="" width="78" height="78" loading="lazy"></a>
+          <div class="app-card-copy"><p class="app-category">More room to be inspired</p><h3><a href="burlycon/">BurlyCon <span aria-hidden="true">↗</span></a></h3><p>Your classes, your people, your kind of weekend. Keep the whole convention close at hand.</p><div class="app-meta"><span>iOS &amp; Android</span><a href="burlycon/">Explore the app <span aria-hidden="true">→</span></a></div></div>
+        </article>
+        <article class="app-card card-lockitup">
+          <a class="app-art art-lockitup" href="lockitup/" tabindex="-1" aria-hidden="true"><span class="art-label">LESS MATH. MORE SPADES.</span><img class="card-screen" src="assets/lockitup-screen.png" alt="" width="788" height="1400" loading="lazy"><img class="card-mini-icon" src="assets/lockitup-icon.png" alt="" width="78" height="78" loading="lazy"></a>
+          <div class="app-card-copy"><p class="app-category">A seat at your Spades table</p><h3><a href="lockitup/">Lock It Up <span aria-hidden="true">↗</span></a></h3><p>You bring the cards and the friendly rivalry. We’ll take care of bids, books, and bags.</p><div class="app-meta"><span>Free · iOS &amp; Android</span><a href="lockitup/">Explore the app <span aria-hidden="true">→</span></a></div></div>
+        </article>
+      </div>
+    </section>
+    <section class="studio-section" id="about" aria-labelledby="about-heading">
+      <div class="shell studio-inner"><div class="studio-heading"><p class="eyebrow">Hello from Atlanta, Georgia</p><h2 id="about-heading">Small on purpose.<br><span>Thoughtful by nature.</span></h2></div><div class="studio-copy"><p>Widget Corner is an independent, owner-operated software studio. We make focused apps for the things people love doing.</p><p>We care about the details: a useful feature, a clear screen, a little less friction. Simple software, made with care, from our corner to yours.</p><a class="text-link" href="mailto:support@widgetcorner.com">Say hello <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+    <section class="shell help-section" aria-labelledby="help-heading"><div><p class="eyebrow">A real person on the other end</p><h2 id="help-heading">Need a hand?</h2><p>Questions, ideas, or something not quite working?<br>We’re happy to help.</p></div><a class="button button-outline" href="support/">Find app support <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><a class="brand-link" href="./"><img class="brand-mark" src="assets/widget-mark.svg" alt="" width="28" height="28">Widget Corner</a><p>Independent apps. Made with care.</p><p>© 2026 Widget Corner LLC</p></div></footer>
 </body>
 </html>

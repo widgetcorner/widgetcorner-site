@@ -5,191 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BurlyCon — Schedule and venue guide, offline</title>
   <meta name="description" content="The companion app for BurlyCon. Offline schedule, room guide, venue map, and reminders, with larger text, dark mode, and reduced motion.">
+  <meta name="theme-color" content="#f8f7f2">
   <meta name="color-scheme" content="light dark">
-  <style>
-    :root {
-      --bg: #f7f7f9;
-      --fg: #111418;
-      --muted: #4a5260;
-      --accent: #5b4fe5;
-      --rule: #e5e8ec;
-      --max: 36rem;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #11161c;
-        --fg: #e8ecf1;
-        --muted: #9aa4b2;
-        --accent: #9d94ff;
-        --rule: #232a33;
-      }
-    }
-    *, *::before, *::after { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 17px;
-      line-height: 1.6;
-      color: var(--fg);
-      background: var(--bg);
-      -webkit-font-smoothing: antialiased;
-    }
-    a {
-      overflow-wrap: anywhere;
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-    a:hover { text-decoration-thickness: 2px; }
-    a:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 2px;
-      border-radius: 2px;
-    }
-    .page {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 4rem 1.5rem 3rem;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 0 2.5rem;
-      margin-bottom: 2.5rem;
-      border-bottom: 1px solid var(--rule);
-    }
-    .brand {
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--muted);
-      margin: 0 0 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-    .brand a {
-      color: inherit;
-      text-decoration: none;
-    }
-    .brand a:hover { color: var(--accent); }
-    h1 {
-      font-size: 2.5rem;
-      line-height: 1.1;
-      margin: 0 0 1rem;
-      letter-spacing: -0.025em;
-      font-weight: 800;
-    }
-    .tagline {
-      color: var(--muted);
-      font-size: 1.05rem;
-      margin: 0 auto;
-      max-width: 30rem;
-    }
-    main section { margin-bottom: 2.25rem; }
-    h2 {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted);
-      margin: 0 0 0.75rem;
-      font-weight: 600;
-    }
-    p { margin: 0 0 1rem; }
-    ul.features {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    ul.features li {
-      padding: 0.75rem 0;
-      border-bottom: 1px solid var(--rule);
-    }
-    ul.features li:last-child { border-bottom: none; }
-    ul.features strong { font-weight: 600; }
-    .privacy-callout {
-      background: color-mix(in srgb, var(--accent) 8%, transparent);
-      border-left: 3px solid var(--accent);
-      padding: 1rem 1.25rem;
-      margin: 0 0 1rem;
-      border-radius: 0 4px 4px 0;
-    }
-    .privacy-callout p { margin: 0; }
-    .links a + a { margin-left: 1rem; }
-    footer {
-      border-top: 1px solid var(--rule);
-      padding-top: 1.5rem;
-      margin-top: 2.5rem;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-    footer p { margin: 0 0 0.5rem; }
-    footer p:last-child { margin: 0; }
-    @media (max-width: 480px) {
-      .page { padding: 2.5rem 1.25rem 2rem; }
-      h1 { font-size: 2rem; }
-      body { font-size: 16px; }
-    }
-  </style>
+  <link rel="icon" type="image/svg+xml" href="../assets/widget-mark.svg">
+  <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body>
-  <div class="page">
-    <header>
-      <p class="brand"><a href="https://widgetcorner.com">Widget Corner</a></p>
-      <h1>BurlyCon</h1>
-      <p class="tagline">The companion app for BurlyCon — schedule, room guide, venue map, and reminders. Works offline. No account required.</p>
-    </header>
+<body class="product-page theme-burlycon">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand-link" href="../"><img class="brand-mark" src="../assets/widget-mark.svg" alt="" width="36" height="36">Widget Corner</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../#apps">Our apps</a>
+        <a href="../support/">Support</a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-      <section aria-labelledby="about-heading">
-        <h2 id="about-heading">About</h2>
+  <main id="main">
+    <section class="product-hero" aria-labelledby="product-heading">
+      <div class="shell product-hero-grid">
+        <div class="product-intro">
+          <p class="eyebrow">Your convention companion</p>
+          <img class="app-icon" src="../assets/burlycon-icon.png" alt="" width="80" height="80">
+          <h1 id="product-heading">Your convention,<br>your way.</h1>
+          <p class="product-name">BurlyCon</p>
+          <p class="hero-description">Find your next class. Save the sessions you love. Know where to go. Bring a little more ease to your BurlyCon weekend.</p>
+          <p class="availability" id="download-heading">For iPhone, iPad, and Android · <a href="support/">App support</a></p>
+          <ul class="product-highlights">
+            <li>Build your own My Con</li>
+            <li>Schedule and room guide offline</li>
+            <li>Larger text and reduced motion</li>
+          </ul>
+        </div>
+        <div class="product-art">
+          <img class="product-screen" src="../assets/burlycon-screen.png" alt="BurlyCon schedule with day filters, room locations, and sessions saved to My Con" width="644" height="1400">
+        </div>
+      </div>
+    </section>
+
+    <div class="shell product-body">
+      <section class="section-intro" aria-labelledby="about-heading">
+        <p class="eyebrow">A closer look</p>
+        <h2 id="about-heading">A little guidance. A lot to discover.</h2>
         <p><a href="https://burlycon.org/convention/">BurlyCon</a> is an annual burlesque arts education convention, held November 5–8, 2026 at the Hilton Seattle Airport &amp; Conference Center in Seattle, Washington.</p>
         <p>The companion app for iPhone, iPad, and Android includes a bundled schedule, venue map, and text room guide, so you can browse classes and look up room locations even without a connection. Connect to refresh the schedule with the latest updates.</p>
       </section>
 
       <section aria-labelledby="features-heading">
-        <h2 id="features-heading">Features</h2>
-        <ul class="features">
-          <li><strong>Convention schedule.</strong> Browse classes, panels, and events by day. Check Home for coming-up sessions.</li>
-          <li><strong>Day chips and search.</strong> Jump between Thursday–Sunday and search by title, presenter, or room.</li>
-          <li><strong>My Con.</strong> Save the sessions you want to attend, grouped by day.</li>
-          <li><strong>Reminders.</strong> Choose a local notification for a session’s start time or up to two hours ahead. Notification permission is required; delivery timing depends on your device.</li>
-          <li><strong>Venue map and room guide.</strong> Read room descriptions or explore the Cascade Building map with zoom, pan, and reset buttons. Both views are included for offline use.</li>
-          <li><strong>Info and links.</strong> Presenter biographies, registration links, hotel details, and accessibility information in one place. External websites require a connection.</li>
+        <p class="eyebrow">The little details</p>
+        <h2 id="features-heading">Make room for a great weekend.</h2>
+        <ul class="feature-grid">
+            <li><h3>Convention schedule</h3><p>Browse classes, panels, and events by day. Check Home for coming-up sessions.</p></li>
+            <li><h3>Day chips and search</h3><p>Jump between Thursday–Sunday and search by title, presenter, or room.</p></li>
+            <li><h3>My Con</h3><p>Save the sessions you want to attend, grouped by day.</p></li>
+            <li><h3>Reminders</h3><p>Choose a local notification for a session’s start time or up to two hours ahead. Notification permission is required; delivery timing depends on your device.</p></li>
+            <li><h3>Venue map and room guide</h3><p>Read room descriptions or explore the Cascade Building map with zoom, pan, and reset buttons. Both views are included for offline use.</p></li>
+            <li><h3>Info and links</h3><p>Presenter biographies, registration links, hotel details, and accessibility information in one place. External websites require a connection.</p></li>
         </ul>
       </section>
 
-      <section aria-labelledby="accessibility-heading">
-        <h2 id="accessibility-heading">Accessibility</h2>
+      <section class="accessibility-section" aria-labelledby="accessibility-heading">
+        <p class="eyebrow">More ways to make it yours</p>
+        <h2 id="accessibility-heading">A more comfortable convention companion.</h2>
         <p>Version 2026.9.15 (build 10) adds accessibility improvements across phones and tablets. Features depend on the app version installed on your device.</p>
-        <ul class="features">
-          <li><strong>Larger text.</strong> The app follows your device’s text-size setting, with wrapping titles, scrollable dialogs, and navigation that adapts to the available space.</li>
-          <li><strong>Light and dark appearance.</strong> The app follows your device’s theme, with updated text and control contrast. The room guide follows Dark Mode; the map image keeps its light background.</li>
-          <li><strong>Reduced motion.</strong> Navigation, dialogs, and refresh indicators respond to your device’s reduced-motion setting.</li>
-          <li><strong>Clearer controls.</strong> Descriptive headings and button labels help assistive technology identify content and actions. Selected filters and saved sessions use text or symbols as well as color.</li>
-        </ul>
+        <ul class="feature-grid">
+            <li><h3>Larger text</h3><p>The app follows your device’s text-size setting, with wrapping titles, scrollable dialogs, and navigation that adapts to the available space.</p></li>
+            <li><h3>Light and dark appearance</h3><p>The app follows your device’s theme, with updated text and control contrast. The room guide follows Dark Mode; the map image keeps its light background.</p></li>
+            <li><h3>Reduced motion</h3><p>Navigation, dialogs, and refresh indicators respond to your device’s reduced-motion setting.</p></li>
+            <li><h3>Clearer controls</h3><p>Descriptive headings and button labels help assistive technology identify content and actions. Selected filters and saved sessions use text or symbols as well as color.</p></li>
+          </ul>
         <p>See <a href="support/#accessibility-heading">accessibility help</a> for settings, map instructions, and the current status of screen-reader and voice-control testing.</p>
       </section>
 
-      <section aria-labelledby="privacy-heading">
-        <h2 id="privacy-heading">Privacy</h2>
-        <div class="privacy-callout">
-          <p>No account, ads, or analytics. <strong>Your saved sessions and reminder settings are stored locally</strong> and are not sent to Widget Corner. See the privacy policy for details about content downloads, device backups, and support email.</p>
-        </div>
+      <section class="privacy-note" aria-labelledby="privacy-heading">
+        <p class="eyebrow">Privacy</p>
+        <h2 id="privacy-heading">Your time. Your device. Your business.</h2>
+        <p>No account, ads, or analytics. <strong>Your saved sessions and reminder settings are stored locally</strong> and are not sent to Widget Corner. See the privacy policy for details about content downloads, device backups, and support email.</p>
+
         <p>Read the full <a href="privacy/">privacy policy</a>.</p>
       </section>
 
-      <section class="links" aria-labelledby="more-heading">
-        <h2 id="more-heading">More</h2>
-        <p>
-          <a href="support/">Support</a>
-          <a href="privacy/">Privacy</a>
-        </p>
+      <section class="product-bottom" aria-labelledby="more-heading">
+        <h2 id="more-heading">A little help, if you need it.</h2>
+        <div class="text-links">
+          <a href="support/">App support <span aria-hidden="true">↗</span></a>
+          <a href="privacy/">Privacy policy <span aria-hidden="true">↗</span></a>
+        </div>
       </section>
-    </main>
+    </div>
+  </main>
 
-    <footer>
-      <p>BurlyCon is an app by <a href="https://widgetcorner.com">Widget Corner LLC</a>.</p>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>BurlyCon is an app by <a href="../">Widget Corner LLC</a>.</p>
       <p>&copy; 2026 Widget Corner LLC</p>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 </html>
